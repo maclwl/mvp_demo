@@ -1,0 +1,166 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            storeFile file('../diibotkey/diibot.jks')
+            keyAlias = 'diibot'
+            storePassword 'diibot2020'
+            keyPassword 'diibot2020'
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.taidii.diibot"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 112
+        versionName "1.1.2"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "arm64-v8a", "armeabi-v7a"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "diibot${defaultConfig.versionName}-release.apk"
+                }
+            }
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor "com.jakewharton:butterknife-compiler:10.2.1"
+
+    //application
+    implementation 'com.android.support:multidex:1.0.0'
+
+    /*ImmersionBar*/
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+
+    /*加载菊花*/
+    implementation 'com.github.maning0303:MNProgressHUD:V2.0.0X'
+
+    /*tab_layout*/
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+    /*Gson*/
+    implementation 'com.google.code.gson:gson:2.8.2'
+
+    /*ok_http*/
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+
+    /*logger*/
+    implementation 'com.orhanobut:logger:1.15'
+
+    /*base_popup*/
+    implementation 'com.github.razerdp:BasePopup:2.2.2'
+
+    /*glide*/
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    /*circle_image*/
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+    /*refresh_layout*/
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.2'
+
+    /*round_image*/
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    /*type_face*/
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+
+    /*seek_bar*/
+    implementation 'com.github.Jay-Goo:RangeSeekBar:v3.0.0'
+
+    /*switch_button*/
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+
+    /*picker_view*/
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+
+    /*event_bus*/
+    implementation 'org.greenrobot:eventbus:3.2.0'
+
+    /*camera_view*/
+    implementation 'com.otaliastudios:cameraview:2.6.3'
+
+    /*lite_orm数据库*/
+    implementation files('libs/lite-orm-1.9.2.jar')
+
+    /*qr_code扫码库*/
+    implementation 'cn.bingoogolapple:bga-qrcode-zbar:1.3.7'
+
+    /*permission权限*/
+    implementation 'pub.devrel:easypermissions:1.2.0'
+
+    /*Bluetooth蓝牙连接*/
+    implementation 'com.clj.fastble:FastBleLib:2.3.4'
+
+    /*PictureSelector图片选择*/
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.5.8'
+
+    /*rx_java*/
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.18'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    /*num_progress*/
+    implementation 'com.daimajia.numberprogressbar:library:1.4@aar'
+
+    /*鲁班图片压缩*/
+    implementation 'top.zibin:Luban:1.1.7'
+
+    /*加载更多*/
+    implementation 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    implementation 'cn.jzvd:jiaozivideoplayer:7.3.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.9.1'
+    implementation 'xiao.free.horizontalrefreshlayout:lib:v0.1.2'
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+
+    /*face++*/
+    implementation files('libs/FaceppSDK.jar')
+}

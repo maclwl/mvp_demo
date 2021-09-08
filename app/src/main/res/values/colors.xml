@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorTheme">#5ADDAA</color>
+    <color name="themeWhite">#ffffff</color>
+    <color name="colorGray">#aaaaaa</color>
+    <color name="colorRed">#D2202F</color>
+    <color name="colorBlue">#007aff</color>
+    <color name="colorOrange">#fe4236</color>
+    <color name="themeBg">#F7F7F5</color>
+    <color name="transparent">#00000000</color>
+    <color name="title_bg_color">@color/themeWhite</color>
+    <color name="colorDarkGray">#646464</color>
+    <color name="divider_color">#E1E1E1</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="text_content_color">#222222</color>
+    <color name="main_collection_bg">#F3E6CB</color>
+    <color name="home_main_menu_color">#F3B313</color>
+    <color name="colorGreen15">#155ADDAA</color>
+    <color name="colorScan">#75000000</color>
+    <color name="search_edit_color">#F6F2EA</color>
+    <color name="num_progress_gray">#CCCCCC</color>
+    <color name="face_register_bg">#404040</color>
+    <color name="class_card_head_text">#262626</color>
+    <color name="class_card_head_samlltext">#757575</color>
+    <color name="class_card_medicinetext">#333333</color>
+    <color name="class_card_food_text">#666666</color>
+</resources>

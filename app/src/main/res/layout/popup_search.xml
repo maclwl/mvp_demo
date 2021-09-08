@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_280"
+    android:layout_height="@dimen/dp_220"
+    android:background="@drawable/icon_pop">
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/ll_close"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_20">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_close_yellow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10">
+        <TextView
+            android:gravity="center"
+            android:textSize="@dimen/sp_9"
+            android:text="@string/search_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_content_color"/>
+        <EditText
+            android:id="@+id/edit_search"
+            android:textSize="@dimen/sp_8"
+            android:paddingLeft="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/dp_5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_15"
+            android:textColor="@color/text_content_color"
+            android:background="@color/search_edit_color"/>
+        <ImageView
+            android:id="@+id/im_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/confirm_img"
+            android:layout_marginTop="@dimen/dp_20"/>
+    </LinearLayout>
+
+</RelativeLayout>

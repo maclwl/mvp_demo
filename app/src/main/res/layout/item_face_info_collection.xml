@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_5"
+    android:background="@color/themeWhite">
+
+    <RelativeLayout
+        android:id="@+id/rel_model"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+        <ImageView
+            android:id="@+id/im_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_class_arrow"/>
+        <TextView
+            android:id="@+id/tv_model_name"
+            android:textSize="@dimen/sp_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/im_down"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:textColor="@color/text_content_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/themeBg">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/student_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.taidii.diibot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 蓝牙相关 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 图片选择 -->
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_MEDIA_STORAGE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".app.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- HOST设置页面 -->
+        <activity
+            android:name=".module.debug.DebugUrlModifyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" /> <!-- 登录界面 -->
+        <activity
+            android:name=".module.login.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+               <!-- <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.HOME" />-->
+            </intent-filter>
+        </activity>
+        <!-- 学校首页界面 -->
+        <activity
+            android:name=".module.school_main.SchoolMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 学生签到界面 -->
+        <activity
+            android:name=".module.school_main.StudentSignActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <!-- 老师签到界面 -->
+        <activity
+            android:name=".module.school_main.StaffSignActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <!-- 签到历史记录界面 -->
+        <activity
+            android:name=".module.school_main.SignHistoryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <!-- 健康检查界面 -->
+        <activity
+            android:name=".module.school_main.HealthCheckActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <!-- 扫码签到，学生列表选择界面 -->
+        <activity
+            android:name=".module.school_main.StudentSignListSelectActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <!-- 访客列表界面 -->
+        <activity
+            android:name=".module.school_main.VisitorListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <!-- 访客详情（添加和编辑界面） -->
+        <activity
+            android:name=".module.school_main.AddEditVisitorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 用户协议/营私政策界面 -->
+        <activity
+            android:name=".module.privacy.CustomWebActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <!-- 培训机构首页界面 -->
+        <activity
+            android:name=".module.organ_main.OrganMainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <!-- 培训机构考勤详情界面 -->
+        <activity
+            android:name=".module.organ_main.OrganDetailSignActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <!-- 人脸对比，视频vs人脸库界面 -->
+        <activity
+            android:name=".module.arc_face.RecognizeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <!-- 本地人脸库与云端库数据同步 -->
+        <activity
+            android:name=".module.arc_face.FaceSynchronizationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <!-- 人脸信息采集注册界面 -->
+        <activity
+            android:name=".module.arc_face.CollectionRegisterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop" />
+        <!-- 人脸信息注册详情界面 -->
+        <activity
+            android:name=".module.arc_face.FaceRegisterDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"/>
+        <!-- 人脸信息详情界面 -->
+        <activity
+            android:name=".module.arc_face.FaceInfoDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"/>
+        <!-- 人脸采集界面 -->
+        <activity
+            android:name=".module.arc_face.CollectionFaceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"/>
+        <!-- 人脸本地库同步云端service -->
+        <service
+            android:name=".service.FaceRegisterService"
+            android:enabled="true"
+            android:exported="true" />
+        <activity
+            android:name=".module.class_card.ClassCardPageOneActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+          />
+        <activity
+            android:name=".module.class_card.ClassCardPageTwoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            />
+        <activity
+            android:name=".module.class_card.ClassCardPhotoViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            />
+        <activity
+            android:name=".module.class_card.ClassCardVideoViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".module.class_card.TeacherDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".module.class_card.NoticeDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".module.class_card.FoodDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".module.class_card.WeekPlanDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="landscape" />
+    </application>
+
+</manifest>

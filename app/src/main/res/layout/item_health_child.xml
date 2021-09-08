@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:text="蚊虫叮咬"
+    android:id="@+id/tv_name"
+    android:textSize="@dimen/sp_7"
+    android:layout_width="@dimen/dp_50"
+    android:layout_height="@dimen/dp_18"
+    android:layout_marginBottom="@dimen/dp_8"
+    android:textColor="@color/text_content_color"
+    android:background="@drawable/health_content_item_bg">
+
+</TextView>

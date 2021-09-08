@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dp_280"
+    android:layout_height="@dimen/dp_220"
+    android:background="@drawable/icon_pop">
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/ll_close"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_20">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_close_yellow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10">
+        <RelativeLayout
+            style="@style/setLayoutStyle"
+            android:layout_marginTop="@dimen/dp_5">
+            <TextView
+                android:textSize="@dimen/sp_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_content_color"
+                android:text="@string/student_check_work_camera"/>
+            <com.suke.widget.SwitchButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                app:sb_button_color="@color/themeWhite"
+                app:sb_background="@color/divider_color"
+                app:sb_checked_color="@color/colorTheme"
+                android:id="@+id/btn_student_check_camera"
+                app:sb_shadow_color="@color/divider_color"
+                app:sb_checkline_color="@color/transparent"
+                app:sb_uncheckcircle_color="@color/transparent"
+                app:sb_uncheck_color="@color/home_main_menu_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeWhite">
+
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rel_health_check"
+            android:layout_width="@dimen/dp_140"
+            android:layout_height="@dimen/dp_30"
+            android:background="@drawable/bg_class_green">
+            <TextView
+                android:id="@+id/tv_sign_type"
+                android:textSize="@dimen/sp_14"
+                android:text="@string/health_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/themeWhite"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_20"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/rel_top"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_child_list"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_toLeftOf="@+id/recycler_child_list">
+        <com.taidii.diibot.view.health.HealthRegionLayout
+            android:id="@+id/health_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_scan"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/im_back"
+        android:src="@drawable/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_15" />
+    <ImageView
+        android:id="@+id/im_confirm"
+        android:src="@drawable/btn_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_15"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/im_back"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_toLeftOf="@+id/im_confirm"
+        android:layout_marginBottom="@dimen/dp_15">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_3"
+            android:background="@color/home_main_menu_color"/>
+        <EditText
+            android:gravity="top"
+            android:id="@+id/edit_remark"
+            android:padding="@dimen/dp_5"
+            android:textSize="@dimen/sp_8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:hint="@string/heath_remarks"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/heath_edit_bg"
+            android:textColor="@color/text_content_color"
+            android:textColorHint="@color/text_content_color"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/themeBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rel_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_70"
+        android:background="@drawable/bg_nav">
+        <ImageView
+            android:id="@+id/im_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_return"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/sp_15"/>
+        <TextView
+            android:textSize="@dimen/sp_12"
+            android:text="@string/face_entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/themeWhite"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_20"/>
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/ll_syn"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_15">
+            <ImageView
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15"
+                android:src="@drawable/face_date_update"/>
+            <TextView
+                android:id="@+id/tv_syn"
+                android:gravity="center"
+                android:textSize="@dimen/sp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/face_date_syn"
+                android:textColor="@color/themeWhite"
+                android:layout_marginLeft="@dimen/dp_2"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_height="match_parent"
+        android:background="@color/themeBg"
+        android:layout_width="match_parent"
+        app:srlEnablePureScrollMode="true"
+        app:srlEnableLoadMore="true"
+        app:srlDragRate="0.75">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/person_face_list"
+            android:layout_width="match_parent"
+            android:background="@color/themeBg"
+            android:layout_height="match_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dp_12"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginBottom="@dimen/dp_3"
+    android:minHeight="@dimen/dp_60"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/im_head"
+        android:layout_width="@dimen/dp_37"
+        android:src="@color/Blue"
+        android:layout_height="@dimen/dp_35"/>
+</RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:gravity="left"
+            android:id="@+id/tv_food"
+            android:textSize="@dimen/sp_7"
+            android:lineSpacingExtra="@dimen/dp_1_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/class_card_medicinetext"/>
+
+        <TextView
+            android:ellipsize="end"
+            android:gravity="left"
+            android:id="@+id/tv_sname"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_7"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:text="牛"
+            android:textColor="@color/class_card_food_text"/>
+
+        <TextView
+            android:ellipsize="end"
+            android:gravity="left"
+            android:id="@+id/tv_mname"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:visibility="gone"
+            android:text="鸡蛋"
+            android:textColor="@color/class_card_food_text"/>
+
+        <TextView
+            android:ellipsize="end"
+            android:gravity="left"
+            android:id="@+id/tv_remark"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:visibility="gone"
+            android:text="稀粥"
+            android:textColor="@color/class_card_food_text"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+   <!-- <View
+        android:layout_width="match_parent"
+        android:background="#F9F5F1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_height="@dimen/dp_0_5">
+
+    </View>-->
+
+</LinearLayout>

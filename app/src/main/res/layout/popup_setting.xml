@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dp_280"
+    android:layout_height="@dimen/dp_220"
+    android:background="@drawable/icon_pop">
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/ll_close"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_20">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_close_yellow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10">
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnablePureScrollMode="true"
+            app:srlEnableLoadMore="true"
+            app:srlDragRate="0.75">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        style="@style/setLayoutStyle">
+                        <TextView
+                            android:textSize="@dimen/sp_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/staff_check_work"
+                            android:textColor="@color/text_content_color"/>
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/btn_staff_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            app:sb_button_color="@color/themeWhite"
+                            app:sb_background="@color/divider_color"
+                            app:sb_checked_color="@color/colorTheme"
+                            app:sb_shadow_color="@color/divider_color"
+                            app:sb_checkline_color="@color/transparent"
+                            app:sb_uncheckcircle_color="@color/transparent"
+                            app:sb_uncheck_color="@color/home_main_menu_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/setLayoutStyle"
+                        android:layout_marginTop="@dimen/dp_5">
+                        <TextView
+                            android:textSize="@dimen/sp_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/text_content_color"
+                            android:text="@string/staff_check_work_camera"/>
+                        <com.suke.widget.SwitchButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            app:sb_button_color="@color/themeWhite"
+                            app:sb_background="@color/divider_color"
+                            android:id="@+id/btn_staff_check_camera"
+                            app:sb_checked_color="@color/colorTheme"
+                            app:sb_shadow_color="@color/divider_color"
+                            app:sb_checkline_color="@color/transparent"
+                            app:sb_uncheckcircle_color="@color/transparent"
+                            app:sb_uncheck_color="@color/home_main_menu_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/setLayoutStyle"
+                        android:layout_marginTop="@dimen/dp_5">
+                        <TextView
+                            android:textSize="@dimen/sp_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/quick_check_work"
+                            android:textColor="@color/text_content_color"/>
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/btn_quick_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            app:sb_button_color="@color/themeWhite"
+                            app:sb_background="@color/divider_color"
+                            app:sb_checked_color="@color/colorTheme"
+                            app:sb_shadow_color="@color/divider_color"
+                            app:sb_checkline_color="@color/transparent"
+                            app:sb_uncheckcircle_color="@color/transparent"
+                            app:sb_uncheck_color="@color/home_main_menu_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/setLayoutStyle"
+                        android:layout_marginTop="@dimen/dp_5">
+                        <TextView
+                            android:textSize="@dimen/sp_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/text_content_color"
+                            android:text="@string/student_check_work_camera"/>
+                        <com.suke.widget.SwitchButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            app:sb_button_color="@color/themeWhite"
+                            app:sb_background="@color/divider_color"
+                            app:sb_checked_color="@color/colorTheme"
+                            android:id="@+id/btn_student_check_camera"
+                            app:sb_shadow_color="@color/divider_color"
+                            app:sb_checkline_color="@color/transparent"
+                            app:sb_uncheckcircle_color="@color/transparent"
+                            app:sb_uncheck_color="@color/home_main_menu_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/setLayoutStyle"
+                        android:layout_marginTop="@dimen/dp_5">
+                        <TextView
+                            android:textSize="@dimen/sp_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/spread_all_class"
+                            android:textColor="@color/text_content_color" />
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/btn_spread_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            app:sb_button_color="@color/themeWhite"
+                            app:sb_background="@color/divider_color"
+                            app:sb_checked_color="@color/colorTheme"
+                            app:sb_shadow_color="@color/divider_color"
+                            app:sb_checkline_color="@color/transparent"
+                            app:sb_uncheckcircle_color="@color/transparent"
+                            app:sb_uncheck_color="@color/home_main_menu_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/setLayoutStyle"
+                        android:layout_marginTop="@dimen/dp_5">
+                        <TextView
+                            android:textSize="@dimen/sp_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/out_line_check_work"
+                            android:textColor="@color/text_content_color" />
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/btn_out_line"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            app:sb_button_color="@color/themeWhite"
+                            app:sb_background="@color/divider_color"
+                            app:sb_checked_color="@color/colorTheme"
+                            app:sb_shadow_color="@color/divider_color"
+                            app:sb_checkline_color="@color/transparent"
+                            app:sb_uncheckcircle_color="@color/transparent"
+                            app:sb_uncheck_color="@color/home_main_menu_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/setLayoutStyle"
+                        android:layout_marginTop="@dimen/dp_5">
+                        <TextView
+                            android:textSize="@dimen/sp_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/hint_sign_in_student"
+                            android:textColor="@color/text_content_color" />
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/btn_hint_sign_student"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            app:sb_button_color="@color/themeWhite"
+                            app:sb_background="@color/divider_color"
+                            app:sb_checked_color="@color/colorTheme"
+                            app:sb_shadow_color="@color/divider_color"
+                            app:sb_checkline_color="@color/transparent"
+                            app:sb_uncheckcircle_color="@color/transparent"
+                            app:sb_uncheck_color="@color/home_main_menu_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/setLayoutStyle"
+                        android:layout_marginTop="@dimen/dp_5">
+                        <TextView
+                            android:textSize="@dimen/sp_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/set_temp_default"
+                            android:textColor="@color/text_content_color" />
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/btn_temp_default"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            app:sb_button_color="@color/themeWhite"
+                            app:sb_background="@color/divider_color"
+                            app:sb_checked_color="@color/colorTheme"
+                            app:sb_shadow_color="@color/divider_color"
+                            app:sb_checkline_color="@color/transparent"
+                            app:sb_uncheckcircle_color="@color/transparent"
+                            app:sb_uncheck_color="@color/home_main_menu_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        style="@style/setLayoutStyle"
+                        android:layout_marginTop="@dimen/dp_5">
+                        <TextView
+                            android:textSize="@dimen/sp_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/visible_height_weight"
+                            android:textColor="@color/text_content_color" />
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/btn_visible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            app:sb_button_color="@color/themeWhite"
+                            app:sb_background="@color/divider_color"
+                            app:sb_checked_color="@color/colorTheme"
+                            app:sb_shadow_color="@color/divider_color"
+                            app:sb_checkline_color="@color/transparent"
+                            app:sb_uncheckcircle_color="@color/transparent"
+                            app:sb_uncheck_color="@color/home_main_menu_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/setLayoutStyle"
+                        android:id="@+id/rel_synchronization"
+                        android:layout_marginTop="@dimen/dp_5">
+                        <TextView
+                            android:textSize="@dimen/sp_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/face_synchronization"
+                            android:textColor="@color/text_content_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/setLayoutStyle"
+                        android:id="@+id/rel_agreement"
+                        android:layout_marginTop="@dimen/dp_5">
+                        <TextView
+                            android:textSize="@dimen/sp_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/txt_use_agreement"
+                            android:textColor="@color/text_content_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/setLayoutStyle"
+                        android:id="@+id/rel_privacy"
+                        android:layout_marginTop="@dimen/dp_5">
+                        <TextView
+                            android:textSize="@dimen/sp_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/txt_privacy_policy"
+                            android:textColor="@color/text_content_color" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/setLayoutStyle"
+                        android:id="@+id/rel_class_card"
+                        android:layout_marginTop="@dimen/dp_5">
+                        <TextView
+                            android:textSize="@dimen/sp_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/class_card_switch_card"
+                            android:textColor="@color/text_content_color" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+
+</RelativeLayout>

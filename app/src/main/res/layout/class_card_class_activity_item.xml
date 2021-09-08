@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginLeft="@dimen/dp_13"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="@dimen/dp_20"
+    android:layout_height="@dimen/dp_20">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/im_head"
+        android:layout_width="@dimen/dp_20"
+        android:src="@drawable/avatar_loading"
+        android:layout_height="@dimen/dp_20"/>
+</RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:ellipsize="end"
+            android:gravity="left"
+            android:id="@+id/tv_sname"
+            android:textSize="@dimen/sp_7"
+            android:text="陈老师"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/class_card_medicinetext"/>
+
+        <TextView
+            android:ellipsize="end"
+            android:gravity="left"
+            android:id="@+id/tv_mname"
+            android:textSize="@dimen/sp_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="运动会比赛运动会比赛运动会比赛运动会比赛运动会比赛运动会比赛运动会比赛运动会比赛运动会比赛运动会比赛运动会比赛"
+            android:textColor="@color/class_card_food_text"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_photo_data"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:ellipsize="end"
+            android:gravity="left"
+            android:id="@+id/tv_remark"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="2021-4-25 13:00"
+            android:textColor="@color/class_card_food_text"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#F9F5F1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_height="@dimen/dp_0_5">
+
+    </View>
+
+</LinearLayout>

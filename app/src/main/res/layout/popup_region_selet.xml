@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dp_160"
+    android:layout_height="wrap_content"
+    android:background="@drawable/region_popup_layout_sp">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_china"
+        android:textSize="@dimen/sp_11"
+        android:text="@string/region_china"
+        android:textColor="@color/colorRed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/divider_color"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_singapore"
+        android:textSize="@dimen/sp_11"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:textColor="@color/colorBlue"
+        android:text="@string/region_singapore"/>
+</LinearLayout>

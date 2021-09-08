@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_30"
+    android:layout_height="@dimen/dp_30">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/im_head"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"/>
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:orientation="vertical"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:background="@drawable/school_content_sign_normal_bg"/>
+    <TextView
+        android:id="@+id/tv_sign"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/sign"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_10"
+        android:textColor="@color/themeWhite"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tv_sign_rund5_green_bg"/>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/im_health_tip"
+        android:layout_width="@dimen/dp_13"
+        android:layout_height="@dimen/dp_13"
+        android:src="@drawable/icon_health_tip"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

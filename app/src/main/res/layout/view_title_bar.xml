@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_out_frame"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_56"
+    android:background="@color/title_bg_color">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/title_left_area"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_11"
+        android:paddingRight="@dimen/dp_11"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:src="@drawable/back"
+            android:id="@+id/title_left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_33"
+            android:layout_marginRight="@dimen/dp_10"/>
+
+        <TextView
+            android:visibility="gone"
+            android:singleLine="true"
+            android:id="@+id/title_left"
+            android:textSize="@dimen/sp_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGray"/>
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:singleLine="true"
+        android:id="@+id/title_middle"
+        android:textSize="@dimen/sp_18"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:textColor="@color/themeWhite"
+        android:layout_marginTop="@dimen/dp_11"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_11"
+        android:id="@+id/title_right_area"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:paddingRight="@dimen/dp_11"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/title_right"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/sp_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_8" />
+
+        <ImageView
+            android:id="@+id/title_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_33"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

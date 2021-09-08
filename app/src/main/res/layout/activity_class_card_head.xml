@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_45">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/dp_25">
+
+        <ImageView
+            android:id="@+id/top_name"
+            android:layout_width="@dimen/dp_19"
+            android:layout_height="@dimen/dp_17"
+            android:layout_centerVertical="true"
+            ></ImageView>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/themeWhite"
+            android:layout_toRightOf="@+id/top_name"
+            android:layout_marginLeft="@dimen/dp_10"
+          />
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_12"
+            android:textColor="@color/themeWhite"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_toLeftOf="@+id/iv_refresh">
+
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_toLeftOf="@+id/iv_setting"
+            android:src="@drawable/class_card_refresh"></ImageView>
+
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:src="@drawable/class_card_setting"></ImageView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

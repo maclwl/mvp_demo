@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextureView
+            android:id="@+id/single_camera_texture_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.taidii.diibot.widget.face.FaceRectView
+            android:id="@+id/single_camera_face_rect_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dp_210"
+            android:layout_height="@dimen/dp_240"
+            android:src="@drawable/face_recognize"/>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/face_register_bg">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:text="@string/cancel"
+            android:textSize="@dimen/sp_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/themeWhite"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_40" />
+
+        <ImageView
+            android:text="register"
+            android:id="@+id/btn_register"
+            android:layout_gravity="center"
+            android:src="@drawable/face_photo"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</FrameLayout>

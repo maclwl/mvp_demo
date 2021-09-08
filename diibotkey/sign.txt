@@ -1,0 +1,3 @@
+store password: diibot2020
+alias: diibot
+password:  diibot2020

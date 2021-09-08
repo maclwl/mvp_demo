@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/class_card_bg"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/activity_class_card_head"
+        ></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="@dimen/dp_18"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="11.8"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/student_list_head_bg"
+                    android:layout_height="@dimen/dp_30">
+
+                    <TextView
+                        android:id="@+id/tv_class_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/sp_10"
+                        android:text="小一班"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:textColor="@color/class_card_head_text"
+                        >
+
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:orientation="horizontal"
+                        android:layout_toRightOf="@+id/tv_class_name"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical|right"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_circle_01"
+                                android:layout_width="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_15"
+                                android:textColor="@color/themeWhite"
+                                android:textSize="@dimen/sp_6"
+                                android:gravity="center"
+                                android:background="@drawable/class_card_circle_bg"
+                                android:src="@drawable/scan_attendance"></TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:textSize="@dimen/sp_6"
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:text="@string/class_student_head01"
+                                android:textColor="@color/class_card_head_text"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_8"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_circle_02"
+                                android:layout_width="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_15"
+                                android:textColor="@color/themeWhite"
+                                android:textSize="@dimen/sp_6"
+                                android:gravity="center"
+                                android:background="@drawable/class_card_circle_bg"
+                                android:src="@drawable/scan_attendance"></TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:textSize="@dimen/sp_6"
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:text="@string/class_student_head02"
+                                android:textColor="@color/class_card_head_text"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_8"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_circle_03"
+                                android:layout_width="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_15"
+                                android:textColor="@color/themeWhite"
+                                android:textSize="@dimen/sp_6"
+                                android:gravity="center"
+                                android:background="@drawable/class_card_circle_bg"
+                                android:src="@drawable/scan_attendance"></TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:textSize="@dimen/sp_6"
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:text="@string/class_student_head03"
+                                android:textColor="@color/class_card_head_text"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_8"
+                            android:layout_marginRight="@dimen/dp_8"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_circle_04"
+                                android:layout_width="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_15"
+                                android:textColor="@color/themeWhite"
+                                android:textSize="@dimen/sp_6"
+                                android:gravity="center"
+                                android:background="@drawable/class_card_circle_bg"
+                                android:src="@drawable/scan_attendance"></TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:textSize="@dimen/sp_6"
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:text="@string/class_student_head04"
+                                android:textColor="@color/class_card_head_text"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_8"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_circle_05"
+                                android:layout_width="@dimen/dp_15"
+                                android:layout_height="@dimen/dp_15"
+                                android:text="32"
+                                android:textColor="@color/themeWhite"
+                                android:textSize="@dimen/sp_6"
+                                android:gravity="center"
+                                android:background="@drawable/class_card_circle_bg"
+                                android:src="@drawable/scan_attendance"></TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
+                                android:textSize="@dimen/sp_6"
+                                android:layout_marginLeft="@dimen/dp_5"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:text="@string/class_student_head05"
+                                android:textColor="@color/class_card_head_text"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/class_card_bottom_allbg"
+                    android:layout_height="match_parent">
+
+                    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+                        android:id="@+id/refresh_student_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_student_data"
+                            android:layout_width="match_parent"
+                            android:layout_marginHorizontal="@dimen/dp_15"
+                            android:layout_height="match_parent"/>
+
+                    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_weight="5.5"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3.3"
+                android:layout_height="@dimen/dp_0">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/teacher_list_head_bg"
+                    android:layout_height="@dimen/dp_30">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/sp_10"
+                        android:text="@string/class_card_teacher"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:textColor="@color/class_card_head_text"
+                        >
+
+
+                    </TextView>
+
+
+                    <TextView
+                        android:id="@+id/tv_teacher_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:layout_alignParentRight="true"
+                        android:textSize="@dimen/sp_7"
+                        android:text="@string/class_card_look_detail"
+                        android:textColor="@color/class_card_head_samlltext"
+                        android:layout_marginRight="@dimen/dp_10"
+                        >
+
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/teacher_list_bottom_bg"
+                    android:layout_height="match_parent">
+
+                    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+                        android:id="@+id/refresh_teacher_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_teacher_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="6.1"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_height="@dimen/dp_0">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/medicine_list_head_bg"
+                    android:layout_height="@dimen/dp_30">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/sp_10"
+                        android:text="@string/class_card_medicine"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:textColor="@color/class_card_head_text"
+                       >
+
+
+                    </TextView>
+
+
+                    <TextView
+                        android:id="@+id/tv_people_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textSize="@dimen/sp_7"
+                        android:textColor="@color/class_card_head_samlltext"
+                        android:layout_marginRight="@dimen/dp_10"
+                       >
+
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/medicine_list_bottom_bg"
+                    android:layout_height="match_parent">
+
+                    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+                        android:id="@+id/refresh_medicine_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_medicine_data"
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="@dimen/dp_5"
+                            android:layout_height="match_parent"/>
+
+                    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_height="@dimen/dp_25">
+
+        <ImageView
+            android:id="@+id/btn_left"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            android:layout_centerVertical="true"
+            android:src="@drawable/class_card_left"
+            android:scaleType="centerInside"
+            android:alpha="0.7"
+            ></ImageView>
+
+        <ImageView
+            android:id="@+id/btn_right"
+            android:layout_toRightOf="@+id/btn_left"
+            android:layout_width="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/dp_15"
+            android:scaleType="centerInside"
+            android:src="@drawable/class_card_right"
+            ></ImageView>
+
+    </RelativeLayout>
+</FrameLayout>

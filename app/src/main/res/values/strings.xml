@@ -1,0 +1,227 @@
+<resources>
+    <string name="app_name">Diibot</string>
+    <string name="debug_modify_url">编辑Url</string>
+    <string name="save">save</string>
+    <string name="network_timeout">Abnormal network connection</string>
+    <!--login-->
+    <string name="region">region</string>
+    <string name="login">login</string>
+    <string name="hint_name">enter one user name</string>
+    <string name="hint_psw">Please input a password</string>
+    <string name="region_china">China</string>
+    <string name="region_singapore">Singapore</string>
+    <string name="error_name_psw">Wrong user name or password! Please make sure the area is correct</string>
+    <!--school_main-->
+    <string name="sign">sign</string>
+    <string name="time_title">time：</string>
+    <string name="temp_title">temperature：</string>
+    <string name="guardians_title">Drop off person/guardian：</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_temp">Temp taking</string>
+    <string name="sign_out">Sign out</string>
+    <string name="login_out">Log out</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="bluetooth_temp_title">Connect to Bluetooth thermometer？</string>
+    <string name="bluetooth_temp_subtitle">Temperature data can be obtained through thermometer</string>
+    <string name="bluetooth_connect_fail_title">Bluetooth thermometer connection failed</string>
+    <string name="bluetooth_connect_fail_content">Please make sure the network and device are normal and turn on Bluetooth function</string>
+    <string name="bluetooth_stop_connect">Stop the connection</string>
+    <string name="staff_check_work">Enable staff attendance</string>
+    <string name="staff_check_work_camera">Enable staff attendance camera</string>
+    <string name="quick_check_work">Quick attendance model</string>
+    <string name="student_check_work_camera">Enable student attendance camera</string>
+    <string name="spread_all_class">Expand all class</string>
+    <string name="out_line_check_work">Off_line attendance</string>
+    <string name="hint_sign_in_student">Hide signed in students</string>
+    <string name="set_temp_default">Default Temp.set as 36.5</string>
+    <string name="visible_height_weight">Show height and weight</string>
+    <string name="no_data_input_content">All attendance data uploaded successfully</string>
+    <string name="default_temp">36.5</string>
+    <string name="sign_fail">Sign in failed</string>
+    <string name="history">History</string>
+    <string name="type">Status</string>
+    <string name="time">Time</string>
+    <string name="temp">Temp</string>
+    <string name="guardian">Parent</string>
+    <string name="event">Action</string>
+    <string name="delete">Delete</string>
+    <string name="confirm_delete_sign_history">Confirm to delete this record？</string>
+    <string name="date">Date</string>
+    <string name="ok">ok</string>
+    <string name="health_check">Health Check</string>
+    <string name="setting">Setting</string>
+    <string name="notify_title">tips</string>
+    <string name="gps_notify_msg">The positioning function needs to be turned on when scanning Bluetooth</string>
+    <string name="scan_permission">Scan QR code requires permission to turn on camera and astigmatism lamp</string>
+    <string name="permission_denied">Camera permission denied</string>
+    <string name="permission_denied_active">permission denied!</string>
+    <string name="camera_error">Error opening camera</string>
+    <string name="turn_of_bluetooth">Turn off Bluetooth</string>
+    <string name="qr_code_info_error">The QR code information is abnormal. Please login again to refresh the QR code</string>
+    <string name="visitor">Visitor</string>
+    <string name="add_visitor">+ Add visitor</string>
+    <string name="add_visitor_detail">Add visitor</string>
+    <string name="full_name">Full Name：</string>
+    <string name="ic_card">IC：</string>
+    <string name="contact_number">Contact number：</string>
+    <string name="temperature">temperature：</string>
+    <string name="gender">Gender：</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="please_take_photo">please take photo!</string>
+    <string name="please_use_the_bluetooth">please use the bluetooth temperature to measure your temperature</string>
+    <string name="reason_of_visit">Reason of Visit</string>
+    <string name="visit_sign_in">sign in</string>
+    <string name="visit_date">Date：</string>
+    <string name="visit_time">Time：</string>
+    <string name="visit_date_default">dd/mm/yyyy</string>
+    <string name="visit_time_default">--</string>
+    <string name="visit_take_photo">Please take a picture or choose a photo</string>
+    <string name="visit_delete">Delete? Cannot recover after deletion!</string>
+    <string name="heath_remarks">remarks：</string>
+    <string name="txt_use_agreement">User Agreement</string>
+    <string name="txt_privacy_policy">Privacy Policy</string>
+    <string name="face_synchronization">Face entry</string>
+    <string name="questionnaire">Questionnaire survey:</string>
+    <string name="travel_content">Have you ever been to overseas in the past 14 days:</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="search_title">Please enter the name of the student you want to search for</string>
+    <string name="search">Search</string>
+    <string name="search_none">No results found</string>
+    <string name="hint_visitor_name">Please enter name</string>
+    <string name="hint_visitor_contact">Please enter the contact number</string>
+    <string name="hint_visitor_ic">Please input ID card</string>
+    <string name="face_attendance">Facial</string>
+    <string name="synchronization">Upload</string>
+    <string name="refresh">Refresh</string>
+    <string name="scan_attendance">QR</string>
+    <string name="class_list">Class list</string>
+    <string name="device_not_scanned">Bluetooth device not scanned</string>
+    <string name="scanning_device">Scanning Bluetooth device, please wait</string>
+    <string name="connecting_device">Connecting Bluetooth device, please wait</string>
+    <string name="bluetooth_connect_fail">Bluetooth connection failed</string>
+
+    <!--health-->
+    <string name="eye">Eyes</string>
+    <string name="mouth">Mouth</string>
+    <string name="hand">Hand</string>
+    <string name="buttocks">Buttock</string>
+    <string name="face">Face</string>
+    <string name="neck">Neck</string>
+    <string name="chest">Chest</string>
+    <string name="foot">Foot</string>
+    <string name="disease">General</string>
+    <string name="fever">Fever</string>
+    <string name="cold">Cold</string>
+    <string name="cough">Cough</string>
+    <string name="vomit">Vomit</string>
+    <string name="diarrhoea">Diarrhoea</string>
+    <string name="running_nose">Running nose</string>
+    <string name="chicken_pox">Chicken pox</string>
+    <string name="insect_bites">Insect bites</string>
+    <string name="scratches">Scratches</string>
+    <string name="cuts">Cuts</string>
+    <string name="bruises">Bruises</string>
+    <string name="rashes">Rashes</string>
+    <string name="eyes_discharge">Eyes discharge</string>
+    <string name="eyes_swollen">Eyes swollen</string>
+    <string name="eyes_redness">Eyes redness</string>
+    <string name="ulcers">Ulcers</string>
+    <string name="red_spots">Red spots</string>
+    <string name="hfmd">HFMD</string>
+    <string name="stomach_flu">Stomach flu</string>
+    <string name="breathing">Breathing</string>
+    <string name="with_family">With family</string>
+    <string name="holiday">Holiday</string>
+
+    <!--questionnaire-->
+    <string name="text_covid">COVID-Safe Access</string>
+    <string name="sure">sure</string>
+    <string name="have_fever">1.Have you been having a fever?</string>
+    <string name="have_cough">2.Do you have a cough?</string>
+    <string name="sore_throat">3.Do you have a sore throat?</string>
+    <string name="runny_nose">4.Do you have a runny nose?</string>
+    <string name="shortness_breath">5.Do you have shortness of breath?</string>
+    <string name="sense_smell">6.Do you have a loss of sense of smell?</string>
+    <string name="unwell">7.Are you unwell in any way (besides the above)?</string>
+    <string name="adult_trouble">8.Are there adult household members who are unwell with fever and/ or flu-like symptoms such as cough, runny nose, sore throat, shortness of breath? If answer is yes, encourage them to stay at home.</string>
+
+    <!--机构-->
+    <string name="class_room">Classroom: %s</string>
+    <string name="start_time">Start time: %s</string>
+    <string name="remaining">Remaining Courses/Master Courses: %s/%s</string>
+    <string name="organ_sign_in">Sign in: </string>
+    <string name="qr_no_data">No corresponding students found</string>
+
+    <!--arc_face-->
+    <string name="specific_engine_init_failed">%s init failed, code is:%d</string>
+    <string name="low_confidence_level">face low confidence level</string>
+    <string name="recognize_failed_notice">DENIED:%s</string>
+    <string name="recognize_success_notice">PASS:%s</string>
+    <string name="init_failed">init failed,code is %d</string>
+    <string name="library_not_found">library not found, please check if you put .so files into the project directory app\\src\\main\\jniLibs</string>
+    <string name="active_success">active success</string>
+    <string name="already_activated">already activated</string>
+    <string name="active_failed">active failed,code is %d</string>
+    <string name="local_face_synchronization">Local face database synchronization...</string>
+    <string name="face_entry">Face entry</string>
+    <string name="face_date_syn">Face data synchronization</string>
+    <string name="reentry">Reentry</string>
+    <string name="confirm_entry">Confirm entry</string>
+    <string name="click_entry">Click to enter face</string>
+    <string name="click_reentry">Click to change face</string>
+    <string name="face_fail">Fail</string>
+    <string name="hint_active">The local face database has not been initialized. Please synchronize the face data first</string>
+    <string name="face_not_recognized">Face not recognized, please adjust the position</string>
+    <string name="recognize_success">Successful identification</string>
+    <string name="identifying">Identifying...</string>
+    <string name="face_mate_fail">Identification not matched successfully</string>
+
+
+    <string name="string_count_sign_in_default">Signed in</string>
+    <string name="string_count_sign_out_default">Signed out</string>
+
+    <string name="class_card_look_detail">View Detail</string>
+    <string name="class_card_medicine">Medical Request</string>
+    <string name="class_card_medicine_num">Today %1$s</string>
+    <string name="class_card_teacher">Class Teachers</string>
+
+
+    <string name="class_student_head01">Signed in</string>
+    <string name="class_student_head02">Signed Out</string>
+    <string name="class_student_head03">Personal Leave</string>
+    <string name="class_student_head04">Sick Leave</string>
+    <string name="class_student_head05">Health Notice</string>
+    <string name="class_student_head06">Absent</string>
+    <string name="class_card_teacher_info">Teacher Information</string>
+
+    <string name="class_medicine_sname">Child Name&#160;:&#160;%1$s</string>
+    <string name="class_medicine_mname">Medicine%1$d:&#160;%2$s</string>
+    <string name="class_medicine_remark">Remarks&#160;:&#160;%1$s</string>
+
+    <string name="page_two_food">Today\'s Food</string>
+    <string name="page_two_notice">Happenings</string>
+    <string name="page_two_week_plan">Weekly Plan</string>
+    <string name="page_two_class_activity">Class Moments</string>
+    <string name="class_card_look_week_food">View More</string>
+    <string name="class_card_look_more">View More</string>
+
+    <string name="class_teacher_detail_phone">Phone Number&#160;:&#160;%1$s</string>
+    <string name="class_teacher_detail_time">Employment Date&#160;:&#160;%1$s</string>
+    <string name="class_teacher_detail_hornor">Honors&#160;:&#160;</string>
+
+    <string name="txt_course_sunday">Sun</string>
+    <string name="txt_course_monday">Mon</string>
+    <string name="txt_course_tuesday">Tues</string>
+    <string name="txt_course_wednesday">Wed</string>
+    <string name="txt_course_thursday">Thur</string>
+    <string name="txt_course_friday">Fri</string>
+    <string name="txt_course_saturday">Sat</string>
+    <string name="class_card_nogroup">Undefined</string>
+    <string name="class_card_week">Week%1$d</string>
+    <string name="class_card_switch_class">Switch Class</string>
+    <string name="class_card_switch_attenance">Switch to Attendance Mode</string>
+    <string name="class_card_switch_card">Switch to Class Info Mode</string>
+</resources>

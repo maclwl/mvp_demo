@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginHorizontal="@dimen/dp_12"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="left|center_vertical"
+            android:id="@+id/tv_sname"
+            android:textSize="@dimen/sp_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第七周"
+            android:textColor="@color/class_card_medicinetext"/>
+
+        <TextView
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:id="@+id/tv_time"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:text="(2021.3.13-2021.4)"
+            android:textColor="@color/class_card_food_text"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_height="@dimen/dp_70">
+        <ImageView
+            android:id="@+id/im_head"
+            android:layout_width="match_parent"
+            android:src="@color/Blue"
+            android:visibility="gone"
+            android:layout_height="@dimen/dp_70"/>
+        <ImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:src="@drawable/class_card_empty" />
+    </RelativeLayout>
+
+    <!-- <View
+         android:layout_width="match_parent"
+         android:background="#F9F5F1"
+         android:layout_marginTop="@dimen/dp_10"
+         android:layout_height="@dimen/dp_0_5">
+
+     </View>-->
+
+</LinearLayout>

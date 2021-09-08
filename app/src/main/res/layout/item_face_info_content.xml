@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dp_5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/im_head"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"/>
+        <LinearLayout
+            android:id="@+id/ll_bg"
+            android:orientation="vertical"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:background="@drawable/school_content_sign_normal_bg"/>
+        <ImageView
+            android:id="@+id/im_register_face"
+            android:layout_width="@dimen/dp_13"
+            android:layout_height="@dimen/dp_13"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/tv_name"
+        android:singleLine="true"
+        android:textSize="@dimen/sp_7"
+        android:paddingBottom="@dimen/dp_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/text_content_color"/>
+
+</LinearLayout>

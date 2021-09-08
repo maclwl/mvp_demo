@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/dp_5"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_switch_attenance"
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:background="@null"
+            android:enabled="false"
+            android:focusable="false"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:id="@+id/honour_name"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/class_card_medicinetext"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

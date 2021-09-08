@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dp_12"
+    android:layout_marginHorizontal="@dimen/dp_12"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:singleLine="true"
+            android:background="@null"
+            android:enabled="false"
+            android:focusable="false"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:id="@+id/tv_sname"
+            android:textSize="@dimen/sp_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="五一放假通知！"
+            android:textColor="@color/class_card_medicinetext"/>
+
+        <TextView
+            android:gravity="left"
+            android:id="@+id/tv_time"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/sp_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2021-4-23"
+            android:textColor="@color/class_card_medicinetext"/>
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:singleLine="true"
+        android:background="@null"
+        android:enabled="false"
+        android:focusable="false"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:id="@+id/tv_remark"
+        android:textSize="@dimen/sp_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="这是一条xxxx通知的缩略介绍, 里面可"
+        android:textColor="@color/class_card_food_text"/>
+
+   <!-- <View
+        android:layout_width="match_parent"
+        android:background="#F9F5F1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_height="@dimen/dp_0_5">
+
+    </View>-->
+
+</LinearLayout>

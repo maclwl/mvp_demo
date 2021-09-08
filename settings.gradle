@@ -1,0 +1,2 @@
+rootProject.name='Diibot_Client_Java'
+include ':app'
